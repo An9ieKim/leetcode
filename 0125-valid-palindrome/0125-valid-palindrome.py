@@ -1,14 +1,14 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        strs = []
-
+        # 자료형 데크로 선언
+        strs: Deque = collections.deque()
+            
         for char in s:
             if char.isalnum():
                 strs.append(char.lower())
 
-        # 팰린드롬 여부 확인
         while len(strs) > 1:
-            if strs.pop(0) != strs.pop():
+            if strs.popleft() != strs.pop():
                 return False
 
         return True
