@@ -17,6 +17,6 @@ class Solution:
 
         # 슬라이딩 윈도우 우측으로 이동
         for i in range(len(s) - 1):
-            result = max(result, expand(i, i+1), expand(i, i+2), key=len)
+            result = max(result, expand(i, i+1), expand(i, i+2), key=len) # 문자 길이가 짝수/홀수일 경우 모두 고려
 
         return result
