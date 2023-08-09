@@ -44,7 +44,7 @@ class Solution:
         
 #         return True
     
-    ### 문제풀이 3: 런너를 이용한 우아한 풀이
+    ### 문제풀이 3: 런너를 이용한 우아한 풀이 (rev: revised list, slow & fast runners)
         rev = None
         slow = fast = head
         #런너를 이용해 역순 연결리스트 구성
