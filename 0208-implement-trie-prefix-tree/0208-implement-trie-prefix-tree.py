@@ -25,7 +25,6 @@ class Trie:
             if char not in node.children:
                 return False
             node = node.children[char]
-        
         return node.word
         
     # 문자열로 시작 단어 존재 여부 판별
@@ -35,7 +34,6 @@ class Trie:
             if char not in node.children:
                 return False
             node = node.children[char]
-            
         return True
 
 
